@@ -29,7 +29,7 @@ var mapping = {
     "₳",
     "∀",
     "䷳",
-    "口",
+    "₳",
     "闩"
   ],
   б: ["Ƃ", "ƃ", "Ҕ", "Ⴌ", "6"],
@@ -557,10 +557,10 @@ function copyToClipboard(str) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  var ҞӇƟᚢḴ口 = document.getElementById("ȠꝒᓬ࿊6⅌ᚥჳ‖⁄‖╤ᖲ");
+  var ҞӇƟᚢḴȺ = document.getElementById("ȠꝒᓬ࿊6⅌ᚥჳ‖⁄‖╤ᖲ");
   var ẞɃӪᐃ = document.getElementById("ẞɃӪᐃ");
   var ᙖᎼᏓɃँᐂ = document.getElementById("ᙖᎼᏓɃँᐂ");
-  ҞӇƟᚢḴ口.addEventListener("click", function() {
+  ҞӇƟᚢḴȺ.addEventListener("click", function() {
     ᙖᎼᏓɃँᐂ.textContent = transform(ẞɃӪᐃ.value.toLowerCase());
   });
   var ႠƘʘኰИ尸ӪɃᗅꞆႹ = document.getElementById("ႠƘʘኰИ尸ӪɃᗅꞆႹ");
