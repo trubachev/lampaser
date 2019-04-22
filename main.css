@@ -18,10 +18,12 @@ html body {
   width: 100%;
   padding: 8px;
   font-size: x-large;
+  text-align: center;
 }
 
 .ĶዤꙮሰᏦȺ {
   background-color: white;
   padding: 8px;
   font-size: x-large;
+  border: 1px solid black;
 }

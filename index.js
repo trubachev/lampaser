@@ -96,12 +96,11 @@ var mapping = {
     "⺕",
     "⼹"
   ],
-  и: ["Ͷ", "N", "Ɲ", "ᏓᏗ", "ᛁᚮ", "‖⁄‖"],
+  и: ["Ͷ", "N", "Ɲ", "ᛁᚮ", "‖⁄‖"],
   й: ["Ҋ", "Ӥ", "Ñ", "Ň", "Ṋ"],
   к: ["Ķ", "Ƙ", "Ǩ", "Ҝ", "Ҟ", "Ҡ", "Ӄ", "Ԟ", "Ꮶ", "ᛕ", "Ḵ", "⻓", "Ꝅ"],
   л: [
     "Ʌ",
-    "˄",
     "Ԓ",
     "Ԉ",
     "٨",
@@ -548,6 +547,14 @@ function transform(word) {
     .map(replaceCharacter)
     .join("");
 }
+function copyToClipboard(str) {
+  var el = document.createElement("textarea");
+  el.value = str;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+}
 
 document.addEventListener("DOMContentLoaded", function() {
   var ҞӇƟᚢḴ口 = document.getElementById("ȠꝒᓬ࿊6⅌ᚥჳ‖⁄‖╤ᖲ");
@@ -555,5 +562,9 @@ document.addEventListener("DOMContentLoaded", function() {
   var ᙖᎼᏓɃँᐂ = document.getElementById("ᙖᎼᏓɃँᐂ");
   ҞӇƟᚢḴ口.addEventListener("click", function() {
     ᙖᎼᏓɃँᐂ.textContent = transform(ẞɃӪᐃ.value.toLowerCase());
+  });
+  var ႠƘʘኰИ尸ӪɃᗅꞆႹ = document.getElementById("ႠƘʘኰИ尸ӪɃᗅꞆႹ");
+  ႠƘʘኰИ尸ӪɃᗅꞆႹ.addEventListener("click", function() {
+    copyToClipboard(ᙖᎼᏓɃँᐂ.textContent);
   });
 });
