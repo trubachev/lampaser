@@ -1,0 +1,27 @@
+html body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.ँ匚Ңꂶഭዛ⎈Ӥ {
+  max-width: 960px;
+  padding-top: 100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ẞɃӪᐃ {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: x-large;
+}
+
+.ĶዤꙮሰᏦȺ {
+  background-color: white;
+  padding: 8px;
+  font-size: x-large;
+}
